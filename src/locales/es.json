@@ -1,0 +1,72 @@
+{
+  "common": {
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "dismiss": "Cerrar",
+    "rename": "Renombrar",
+    "reset": "Restablecer",
+    "save": "Guardar",
+    "stop": "Detener",
+    "update": "Actualizar",
+    "error": "Error",
+    "export": "Exportar",
+    "networkError": "Error de red. Inténtalo de nuevo.",
+    "downloadETA": "ETA",
+    "calculating": "calculando...",
+    "second": "seg",
+    "seconds": "seg",
+    "year": "año",
+    "years": "años",
+    "month": "mes",
+    "months": "meses",
+    "week": "semana",
+    "weeks": "semanas",
+    "day": "día",
+    "days": "días",
+    "hour": "hora",
+    "hours": "horas",
+    "minute": "min",
+    "minutes": "min",
+    "justNow": "ahora",
+    "ok": "OK",
+    "close": "Cerrar",
+    "clear": "Borrar todo",
+    "gallery": "Galería",
+    "noResults": "Sin resultados"
+  },
+  "settings": {
+    "language": "Idioma",
+    "languageSheetTitle": "Idioma",
+    "languageSearchPlaceholder": "Buscar idiomas",
+    "darkMode": "Modo oscuro",
+    "displayMemoryUsage": "Mostrar uso de memoria"
+  },
+  "about": {
+    "screenTitle": "Información de la App",
+    "description": "Una app que trae modelos de lenguaje directamente a tu teléfono. Basada en llama.cpp y llama.rn."
+  },
+  "feedback": {
+    "title": "Enviar comentarios",
+    "description": "Tu opinión importa. Cuéntanos cómo podemos mejorar PocketPal AI.",
+    "submit": "Enviar comentarios",
+    "success": "¡Gracias por tus comentarios!"
+  },
+  "components": {
+    "sendButton": {
+      "accessibilityLabel": "Enviar"
+    },
+    "chatInput": {
+      "inputPlaceholder": "Mensaje"
+    },
+    "sidebarContent": {
+      "menuItems": {
+        "chat": "Chat",
+        "models": "Modelos",
+        "pals": "Pals",
+        "benchmark": "Benchmark",
+        "settings": "Ajustes",
+        "appInfo": "Info de la App"
+      }
+    }
+  }
+}
