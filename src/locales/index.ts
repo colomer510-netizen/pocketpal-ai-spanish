@@ -28,6 +28,7 @@ const languageRegistry = {
   uk: {displayName: 'Українська (UK)'},
   zh: {displayName: '中文 (ZH)'},
   zh_Hant: {displayName: '繁體中文 (ZH_HANT)'},
+  es: {displayName: 'Español (ES)'},
 } as const;
 
 export type AvailableLanguage = keyof typeof languageRegistry;
@@ -50,6 +51,7 @@ export const languageDisplayNames: Record<AvailableLanguage, string> = {
   uk: languageRegistry.uk.displayName,
   zh: languageRegistry.zh.displayName,
   zh_Hant: languageRegistry.zh_Hant.displayName,
+  es: languageRegistry.es.displayName,
 };
 
 // ─── Lazy Loading ────────────────────────────────────────────────────
@@ -86,6 +88,8 @@ function requireLanguageData(lang: AvailableLanguage): object | null {
       return require('./zh.json');
     case 'zh_Hant':
       return require('./zh_Hant.json');
+    case 'es':
+      return require('./es.json');
     default:
       return null;
   }
@@ -154,6 +158,9 @@ export const l10n = {
   get zh_Hant(): Translations {
     return getTranslations('zh_Hant');
   },
+  get es(): Translations {
+    return getTranslations('es');
+  },
 };
 
 // ─── Interpolation helper ────────────────────────────────────────────
@@ -191,6 +198,7 @@ export const initLocale = (locale?: AvailableLanguage) => {
     uk: require('dayjs/locale/uk'),
     zh: require('dayjs/locale/zh'),
     zh_Hant: require('dayjs/locale/zh-tw'),
+    es: require('dayjs/locale/es'),
   };
 
   locale ? locales[locale] : locales.en;
